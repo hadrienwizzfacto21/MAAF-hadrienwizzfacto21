@@ -1,0 +1,135 @@
+// Body
+$body-background-color: rgb(244, 244, 244);
+$body-background-attachment: fixed;
+$body-background-repeat: no-repeat;
+$body-background-size: cover;
+
+// Main
+$main-background-color: white;
+$main-max-width: 1400px;
+$main-full-grid-medium-width: 800px;
+$main-full-grid-large-width: 1400px;
+
+// Global
+$accent-color: #e30613;
+$accent-dark-color: #057b97;
+$accent-light-color: #057b97;
+$font-family: "Roboto";
+$font-color: black;
+$font-size: calc(0.0625 * 16 * 1rem);
+$font-transform: none;
+$border-radius: 12px;
+
+// Header
+$header-background-color: #e30613;
+$header-logo-max-width: 500px;
+
+// Footer
+$footer-background-color: transparent;
+$footer-font-color: black;
+
+// Apps
+$apps-max-width: 100%;
+$apps-active-app: "app-scratch"; //app-scratch/app-jackpot/app-wheel/app-quiz
+
+// Prompts
+$prompts-custom: "true"; //true/false. Modifier prompts.scss si custom
+
+// Mentions Legales
+$ml-custom: "false"; //true/false. Modifier ml.scss si custom
+
+// Labels
+$label-text-align: left;
+$label-font-color: black;
+$label-font-size: calc(0.0625 * 16 * 1rem);
+$label-font-weight: normal;
+
+// Inputs
+$input-box-shadow: "true"; //true/false
+$input-background-color: #f8fafc;
+$input-font-color: black;
+$input-valid-color: green;
+$input-error-Color: red;
+$input-border-radius: 4px;
+$input-border-color: #e30613;
+$input-border-weight: 2px;
+$input-border-position: "all"; //none/all/bottom/top
+
+// Checkbox
+$check-border-color: black;
+$check-border-radius: 4px;
+$check-background-color: transparent;
+
+// CTA
+$cta-template: "round"; //round/square
+$cta-border-width: 0;
+$cta-border-radius: 12px;
+$cta-border-color: transparent;
+$cta-background-color: #e30613;
+$cta-font-family: "Barlow Semi Condensed";
+$cta-font-color: white;
+$cta-font-size: calc(0.0625 * 24 * 1rem);
+$cta-font-weight: bold;
+$cta-text-transform: uppercase;
+
+// P
+$p-font-family: "Roboto";
+$p-font-color: black;
+$p-font-size: calc(0.0625 * 18 * 1rem);
+$p-font-weight: normal;
+$p-text-transform: none;
+$p-text-align: center;
+
+// H1
+$h1-color: black;
+$h1-font-family: "Barlow Semi Condensed";
+$h1-font-size: calc(0.0625 * 39 * 1rem);
+$h1-font-weight: 700;
+$h1-text-transform: none;
+$h1-text-align: center;
+
+// H2
+$h2-color: #089bd9;
+$h2-font-family: "Barlow Semi Condensed";
+$h2-font-size: calc(0.0625 * 29 * 1rem);
+$h2-font-weight: bold;
+$h2-text-transform: none;
+$h2-text-align: center;
+
+// H3
+$h3-color: #e30613;
+$h3-font-family: "Barlow Semi Condensed";
+$h3-font-size: calc(0.0625 * 35 * 1rem);
+$h3-font-weight: bold;
+$h3-text-transform: none;
+$h3-text-align: center;
+
+// Quiz
+// $quiz-box-shadow: "true"; //true/false
+// $quiz-background-color: #f8fafc;
+$quiz-font-color: #e30613;
+$quiz-font-family: "Barlow Semi Condensed";
+
+$quiz-selected-background-color: #089bd9;
+$quiz-selected-font-color: white;
+$quiz-selected-border-color: #089bd9;
+
+$quiz-submit-font-color: white;
+$quiz-submit-background-color: #e30613;
+
+$quiz-border-radius: 12px;
+$quiz-border-color: #e30613;
+$quiz-border-weight: 2px;
+$quiz-border-position: "all"; //none/all/bottom/top
+
+// Anchors
+$a-text-decoration: underline;
+
+// Media queries
+$mq-small-screen: 400px;
+$mq-medium-screen: 750px;
+$mq-large-screen: 1200px;
+
+// Fonts imports
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100;1,200;1,300;1,400;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;700&display=swap");

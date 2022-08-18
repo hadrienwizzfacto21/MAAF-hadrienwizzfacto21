@@ -1,0 +1,216 @@
+.quiz_title > * {
+  font-size: 3.5rem;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 2rem;
+
+  @media screen and (max-width: $mq-medium-screen) {
+    font-size: 2rem;
+  }
+}
+
+section.quiz {
+  display: flex;
+  // gap: 1rem; //unsupported ipad3
+  overflow: hidden;
+  background-color: transparent;
+
+  // & > * {
+  //   // flex: 1;
+  //   flex: 1 1 0px;
+  // }
+
+  @media screen and (max-width: $mq-medium-screen) {
+    flex-direction: column;
+  }
+}
+
+.quiz-illustration {
+  display: flex;
+  justify-content: center;
+
+  padding-right: 1rem;
+
+  @media screen and (max-width: $mq-medium-screen) {
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+
+  img {
+    display: block;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+  }
+}
+
+.--anim {
+  animation: slideIn 0.4s ease-in-out;
+}
+
+.quiz-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  width: 100%;
+  max-width: $mq-medium-screen;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: white;
+
+  input[type="radio"] {
+    appearance: none;
+    opacity: 0;
+  }
+
+  .quiz-content__head {
+    h4 {
+      color: #089bd9;
+      font-family: "Barlow Semi Condensed";
+      font-weight: normal;
+      font-size: 1.5rem;
+
+      @media screen and (max-width: $mq-medium-screen) {
+        font-size: 1.3rem;
+      }
+    }
+
+    h3 {
+      font-size: 1.7rem;
+
+      @media screen and (max-width: $mq-medium-screen) {
+        font-size: 1.4rem;
+      }
+    }
+
+    & > * {
+      margin-bottom: 0.5rem;
+      text-align: center;
+      color: $h1-color;
+    }
+  }
+
+  .quiz-content__options--radio {
+    label {
+      display: block;
+      width: 100%;
+      max-width: 560px;
+      border: solid $quiz-border-weight $quiz-border-color;
+      color: $quiz-font-color;
+      font-family: $quiz-font-family, sans-serif;
+      border-radius: $quiz-border-radius;
+      font-size: $p-font-size;
+      font-weight: $p-font-weight;
+      text-align: center;
+      padding: 0.7rem 0;
+      margin: 1.4rem auto;
+      cursor: pointer;
+
+      transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out,
+        border 0.15s ease-in-out, color 0.15s ease-in-out;
+
+      &:not(.--quiz-no-hover):hover {
+        background-color: $quiz-selected-background-color;
+        border-color: $quiz-selected-border-color;
+        color: $quiz-selected-font-color;
+      }
+    }
+  }
+
+  .quiz-content__options--image {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+      width: 100%;
+      max-width: 170px;
+      height: auto;
+      margin: 0.8rem 0;
+
+      @media screen and(max-width:$mq-small-screen) {
+        max-width: 110px;
+      }
+
+      // border: solid $quiz-border-weight $quiz-border-color;
+      // border-radius: $quiz-border-radius;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      padding: 1rem;
+      margin: 0 0.8rem;
+
+      border: none;
+      border-radius: $quiz-border-radius;
+      text-align: center;
+      cursor: pointer;
+
+      transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out,
+        border 0.15s ease-in-out, color 0.15s ease-in-out;
+
+      &:not(.--quiz-no-hover):hover {
+        background-color: $quiz-selected-background-color;
+        border-color: $quiz-selected-border-color;
+        color: $quiz-selected-font-color;
+      }
+    }
+  }
+
+  iframe {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 1.5rem;
+
+    background-color: transparent;
+    filter: drop-shadow(rgba(128, 128, 128, 0.6) 1px 1px 10px);
+
+    @if ($apps-active-app == "app-jackpot") {
+      aspect-ratio: 9/5;
+    }
+
+    @if ($apps-active-app == "app-scratch") {
+      aspect-ratio: 1/1;
+    }
+  }
+
+  .quiz-submit {
+    button {
+      background-color: $quiz-submit-background-color;
+      color: $quiz-submit-font-color !important;
+    }
+  }
+}
+
+// QUIZ UTILITIES
+.--quiz-selected {
+  background-color: $quiz-selected-background-color !important;
+  color: $quiz-selected-font-color !important;
+  border-color: $quiz-selected-border-color !important;
+  border-radius: $quiz-border-radius;
+
+  p {
+    color: $quiz-selected-font-color !important;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

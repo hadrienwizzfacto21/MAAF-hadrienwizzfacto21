@@ -1,0 +1,66 @@
+section#prompts {
+  @include GlobalPadd;
+
+  @if ($prompts-custom == "true") {
+    text-align: center;
+    background-color: transparent;
+
+    h1 {
+      color: #e30613;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    h2 {
+      a {
+        color: #089bd9;
+        // font-weight: normal;
+        font-size: 1.8rem;
+        font-family: $h2-font-family;
+        text-decoration: none;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: bold;
+
+      a {
+        font-family: $h2-font-family;
+        font-weight: normal;
+        font-size: 1.3rem;
+      }
+    }
+    .--red {
+      color: #e30613;
+    }
+
+    .--bigger {
+      font-size: 2.2rem;
+    }
+
+    li {
+      margin: auto;
+      width: fit-content;
+      text-align: center;
+    }
+  }
+}
+
+section.prompts-common {
+  grid-area: 1 / 1 / 2 / 3;
+
+  @include GlobalPadd;
+
+  @if ($prompts-custom == "true") {
+    * {
+      text-align: center;
+      font-size: 1rem;
+    }
+    a {
+      font-weight: bold;
+      text-decoration: unset;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+#banner-cookies {
+  position: fixed;
+  bottom: 1vw;
+  left: 1vw;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem;
+
+  color: black;
+  border-radius: $border-radius;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(128, 128, 128, 0.5) 1px 1px 10px;
+
+  p,
+  a {
+    text-align: justify;
+    font-size: 0.9rem;
+    font-weight: normal;
+    line-height: normal;
+    color: black;
+  }
+
+  a {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  #--banner-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-top: 0.8rem;
+    width: 70%;
+
+    & > * {
+      margin-top: 0.4rem;
+    }
+  }
+
+  .--banner-btn {
+    margin-top: 1rem auto 0;
+    padding: 5px 1.2rem;
+
+    cursor: pointer;
+    border-radius: 8px;
+    border: solid gray 1px;
+    background-color: white;
+    color: black;
+    text-align: center;
+
+    transition: background-color 0.15s ease;
+  }
+
+  #--banner-accept:hover {
+    background-color: green;
+    color: white;
+  }
+
+  #--banner-refuse:hover {
+    background-color: red;
+    color: white;
+  }
+
+  #--banner-close:hover {
+    background-color: green;
+    color: white;
+  }
+}

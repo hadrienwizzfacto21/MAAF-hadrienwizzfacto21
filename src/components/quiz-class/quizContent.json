@@ -1,0 +1,56 @@
+{
+  "quizcontent": [
+    {
+      "title": "DESTINATION 1",
+      "ask": "Où se situe ce paysage ?",
+      "illustration": "./styles/img/quiz-quest1.jpg",
+
+      "options": {
+        "radio": ["Cuba", "Gran Canaria", "Martinique"],
+        "image": [
+          ["Gran Canaria", "./styles/img/quiz-quest1.jpg"],
+          ["Maldives", "./styles/img/quiz-quest2.jpg"],
+          ["Seychelles", "./styles/img/quiz-quest3.jpg"]
+        ]
+      }
+    },
+
+    {
+      "title": "DESTINATION 2",
+      "ask": "Où se situe ce paysage ?",
+      "options": {
+        "game": "app-scratch"
+      },
+      "answers": ["Gran Canaria"],
+      "illustration": null
+    },
+
+    {
+      "title": "DESTINATION 3",
+      "ask": "Où pouvez-vous visiter cette ville ?",
+      "options": {
+        "radio": ["Cuba", "Gran Canaria", "Martinique"]
+      },
+      "answers": ["Gran Canaria"],
+      "illustration": "./styles/img/quiz-quest3.jpg"
+    },
+    {
+      "title": "DESTINATION 4",
+      "ask": "Où pouvez-vous visiter cette ville ?",
+      "options": {
+        "game": "app-scratch"
+      },
+      "answers": ["Gran Canaria"],
+      "illustration": "./styles/img/quiz-quest3.jpg"
+    },
+    {
+      "title": "DESTINATION 3",
+      "ask": "Où pouvez-vous visiter cette ville ?",
+      "options": {
+        "radio": ["Cuba", "Gran Canaria", "Martinique"]
+      },
+      "answers": ["Gran Canaria"],
+      "illustration": null
+    }
+  ]
+}

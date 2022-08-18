@@ -1,0 +1,12 @@
+section#illustration {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+
+  .illustration_image {
+    margin-top: 0.8rem;
+    width: 100%;
+    height: auto;
+  }
+}
